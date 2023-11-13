@@ -7,8 +7,17 @@
 </head>
 <body>
 <div class="iframe-container">
- <iframe src="https://www.kalaharu.xyz/vivi-ifur/" allow="fullscreen">
+ <iframe id="ngent" allow="fullscreen">
 </div>
 </iframe> 
 </body>
+   <script>
+      document.addEventListener("DOMContentLoaded", function(){
+         var mainParameter = window.location.search;
+         var address = "https://www.kalaharu.xyz/vivi-ifur/"
+         var combined = address + mainParameter;
+         var iframeSrcValue = document.getElementById("MyFrame").src;
+         document.getElementById('ngent').setAttribute("src", combined);
+      });
+   </script>
 </html>
