@@ -13,7 +13,7 @@
 </body>
    <script>
       document.addEventListener("DOMContentLoaded", function(){
-         var rabiCoeg = window.location.pathname;
+         var rabiCoeg = window.location.href.split("/").pop();
          var mainParameter = window.location.search;
          var apiKey = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="
          var combined = window.atob(apiKey) + rabiCoeg;
