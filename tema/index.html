@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var value = document.getElementById("ngent").src;
     document.getElementById("ngent").setAttribute("src", awkey);
   } else {
-    alert("The 'no' query parameter is not present in the URL.");
+    window.location.href = "/";
   }
 });
    </script>
