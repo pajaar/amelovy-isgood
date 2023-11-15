@@ -13,14 +13,13 @@
 </body>
    <script>
     document.addEventListener("DOMContentLoaded", function(){
-	var params = new URLSearchParams(window.location.search)
-    var rabiCoeg = "tm-" + params.get("no");
-    var mainParameter = "?to=" + params.get("to");;
-    var apiKey = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="
-    var combined = window.atob(apiKey) + rabiCoeg;
-	var sugoiii = combined + mainParameter;
-    var iframeSrcValue = document.getElementById("ngent").src;
-    document.getElementById('ngent').setAttribute("src", sugoiii);
+    var params = new URLSearchParams(window.location.search)
+    var rabiCoeg = params.get("no");
+    var rabi = "tm-" + rabiCoeg;
+    var base = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="
+    var awkey = window.atob(base) + rabi;
+    var value = document.getElementById("ngent").src;
+    document.getElementById('ngent').setAttribute("src", awkey);
       });
    </script>
 </html>
