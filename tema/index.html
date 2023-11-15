@@ -23,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var value = document.getElementById("ngent").src;
     document.getElementById("ngent").setAttribute("src", awkey);
   } else {
-    // Handle the case where 'no' query parameter is null
-    console.error("The 'no' query parameter is null.");
-    // You can add additional logic or display an alert/message as needed
+    alert("The 'no' query parameter is null.");
   }
 });
       });
