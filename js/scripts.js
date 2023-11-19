@@ -78,3 +78,15 @@ $(function () {
         $(this).addClass('active');
     });
 });
+    $(document).ready(function () {
+        $('[id^="kartu"]').hide();
+        $('[id^="kartu"][data-category="kategori1"]').show();
+        $(".filter-button[data-filter='kategori1']").addClass("active");
+        $(".filter-button").click(function () {
+            var value = $(this).attr('data-filter');
+            $('[id^="kartu"]').hide('3000');
+            $('[id^="kartu"][data-category="' + value + '"]').show('3000');
+            $(".filter-button").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
