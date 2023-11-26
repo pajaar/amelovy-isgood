@@ -90,14 +90,3 @@ $(function () {
             $(this).addClass("active");
         });
     });
-
-var rsaClose = document.querySelector('.rsa-close'),
-    rsaPromo = document.querySelector('.rsa-promo');
-if (Cookies2.get('tns_rsa_pref') !== 'opt_out') {
-  rsaPromo.classList.remove('hidden');
-};
-rsaClose.addEventListener('click', function(e){
-  e.preventDefault();
-  rsaPromo.classList.add('hidden');
-  Cookies2.set('tns_rsa_pref', 'opt_out', { domain: '.amelovy.com', expires: 2});
-});
