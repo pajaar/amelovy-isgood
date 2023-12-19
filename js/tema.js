@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var params = new URLSearchParams(window.location.search);
-  var rabiCoeg = params.get("s");
+  var rabiCoeg = params.get("k");
   if (rabiCoeg !== null) {
     document.title = "Contoh tema " + params.get("tema");
     var rabi = "tm-" + rabiCoeg;
