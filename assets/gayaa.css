@@ -7,6 +7,10 @@
    .iframe-container {
    min-height: 100px;
    background:#fff url("prelo.gif") no-repeat 50% center !important;
+   background-size: contain;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     }
         
     iframe {
