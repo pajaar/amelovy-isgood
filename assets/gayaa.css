@@ -6,9 +6,6 @@
         
    .iframe-container {
    min-height: 100px;
-   display: flex;
-  align-items: center; /* Untuk mengatur ke tengah secara vertikal */
-  justify-content: center;
    background:#fff url("prelo.gif") no-repeat 50% center !important;
     }
         
