@@ -5,16 +5,13 @@
     }
         
    .iframe-container {
-   // min-height: 100px;
-   // background:#fff url("prelo.gif") no-repeat 50% center !important;
-
-     position: fixed;
+  position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   z-index: 9999;
-background:#fff url("prelo.gif") no-repeat 50% center !important;
+  background:#fff url("prelo.gif") no-repeat 50% center !important;
     }
         
     iframe {
