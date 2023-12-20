@@ -47,7 +47,7 @@ $(function () {
 
     //timer init
     $('.timer').countdown({
-        date: '15/01/2024 23:59:00',
+        date: '01/15/2024 23:59:00',
         offset: +2,
         day: 'Day',
         days: 'Hari',
