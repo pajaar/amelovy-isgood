@@ -15,7 +15,8 @@
   document.addEventListener("DOMContentLoaded", function () {
     var rabi = "mila-herun";
     var params = window.location.search;
-    var awkey = window.atob(aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw==) + rabi;
+    var apiKey = "aHR0cHM6Ly93d3cua2FsYWhhcnUueHl6Lw=="; 
+    var awkey = window.atob(apiKey) + rabi;
     var well = awkey + params;
     var value = document.getElementById("ngent").src;
     document.getElementById("ngent").setAttribute("src", well);
