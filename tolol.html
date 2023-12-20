@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* Mengatur elemen <iframe> agar menempati layar penuh */
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Menghilangkan border iframe */
+        }
+    </style>
+<body>
+
+<iframe id="myFrame" src="https://amee.love"></iframe>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+
+document.getElementById('myFrame').onload = function() {
+
+    var iframeContent = document.getElementById('myFrame').contentWindow.document;
+    
+    // Ubah teks elemen di dalam iframe
+    var elementInsideIframe = iframeContent.querySelector('h2.text-capitalize');
+    if (elementInsideIframe) {
+        elementInsideIframe.textContent = 'Tolol Terbaik'; // Mengganti teks menjadi "Tolol Terbaik"
+    }
+};
+</script>
+
+</body>
+</html>
+
+
+
